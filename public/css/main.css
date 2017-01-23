@@ -86,7 +86,7 @@ html,body{
 	top: 5px;
 	width: 12px;
 	height: 12px;
-	background: url(/source/sprite.png) 0 -93px no-repeat;
+	background: url(../source/sprite.png) 0 -93px no-repeat;
 }
 .m-nav .unfocus b{
 	position: absolute;
@@ -131,10 +131,10 @@ html,body{
 	top: 34px;
 	width: 22px;
 	height: 22px;
-	background:url('/source/sprite.png') -52px -63px no-repeat;
+	background:url('../source/sprite.png') -52px -63px no-repeat;
 }
 .m-nav .nav .icon:hover{
-	background:url('/source/sprite.png') -28px -64px no-repeat;
+	background:url('../source/sprite.png') -28px -64px no-repeat;
 }
 
 .m-banner{
@@ -216,9 +216,9 @@ html,body{
 	height: 40px;
 	
 }
-.m-details .icon1{background:url('/source/sprite.png') 0 0 no-repeat;}
-.m-details .icon2{background:url('/source/sprite.png') -54px 0 no-repeat;}
-.m-details .icon3{width:50px;left:15px;background:url('/source/sprite.png') -118px 0 no-repeat;}
+.m-details .icon1{background:url('../source/sprite.png') 0 0 no-repeat;}
+.m-details .icon2{background:url('../source/sprite.png') -54px 0 no-repeat;}
+.m-details .icon3{width:50px;left:15px;background:url('../source/sprite.png') -118px 0 no-repeat;}
 
 .m-details .text{
 	margin-left: 105px;
@@ -354,7 +354,7 @@ html,body{
     display: block;
     width: 16px;
     height: 16px;
-    background: url(/source/sprite.png) 0 -65px no-repeat;
+    background: url(../source/sprite.png) 0 -65px no-repeat;
 }
 .m-course .cs-list .price{
 	position: absolute;
@@ -436,7 +436,7 @@ html,body{
 	display: block;
     width: 16px;
     height: 16px;
-    background: url(/source/sprite.png) 0 -65px no-repeat;
+    background: url(../source/sprite.png) 0 -65px no-repeat;
 }
 .m-pages{
 	position: absolute;
