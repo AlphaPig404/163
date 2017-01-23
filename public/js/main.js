@@ -36,7 +36,7 @@
 	function getCookie(c_name){
 		var cookie={};
 		var all=document.cookie;
-		if (all==='') {return cookie;}
+		if (all==='') {return false;}
 		var list=all.split('; ');
 		for (var i = 0; i < list.length; i++) {
 			var item=list[i];
@@ -47,7 +47,7 @@
 			value=decodeURIComponent(value);
 			cookie[name]=value;
 		}
-		return cookie[c_name];
+		return !!cookie[c_name];
 	}
 	//隐藏m-msg节点
 	function nodeHidde(id){
@@ -174,9 +174,9 @@
 						clearClass(this);
 					});
 
-					// $('result').addEventListener('load',function(){
-					// 	var result = JSON.parse(this.contentWindow.document.body.textContent);
-					// });
+					$('result').addEventListener('load',function(){
+						var result = JSON.parse(this.contentWindow.document.body.textContent);
+					});
 				}
 	function render_focus(){
 		if (followSuc) {
