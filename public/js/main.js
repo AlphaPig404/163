@@ -354,7 +354,7 @@
 			}
 	    	temp +='<li class="f-fl">'
 	    					+'<a href="'+list[i].providerLink+'" class="f-db" target="_blank">'
-				    			+'<img src="'+list[i].middlePhotoUrl+'" alt="">'
+				    			+'<img src="'+list[i].middlePhotoUrl.replace(/http/i,"https")+'" alt="">'
 				    			+'<h3>'+list[i].name+'</h3>'
 				    			+'<div class="provider">'+list[i].provider+'</div>'
 				    			+'<div class="count"><i class="icon"></i><span>'+list[i].learnerCount+'</span></div>'
