@@ -489,7 +489,7 @@ html,body{
 .m-ft .logo .edu{
 	font:24px "GillSansMT Bold";
 	color: #21a557;
-	margin-top: 2px;
+	margin-top: -3px;
 	margin-bottom: 20px;
 }
 .m-ft .logo .es{

@@ -85,14 +85,6 @@
 	var _focus='<i>+</i><b>关注</b>';
 
 	
-	// function unFocus(){
-	// 	$('focus').innerHTML=_focus;
-	// 	$('focus').className='focus';
-	// }
-	// function focusing(){
-	// 	$('focus').innerHTML=_unfocus;
-	// 	$('focus').className='unfocus';
-	// }
 	function toggleFocus(temp,className){
 		$('focus').innerHTML=temp;
 		$('focus').className=className;
@@ -192,85 +184,6 @@
 		}
 	}
 
-
-	// if (focus) {
-	// 	$('focus').innerHTML=_unfocus;
-	// 	$('focus').className='unfocus';
-	// }else{
-	// 	$('focus').innerHTML=_focus;
-	// 	$('focus').className='focus';
-	// 	$('focus').addEventListener('click',function(){
-	// 		var temp= '<div class="g-mask"></div>'
-	// 					+'<div class="m-modal m-login">'
-	// 						+'<div class="login_head">登录网易云课堂</div>'
-	// 						+'<i id="unlogin">X</i>'
-	// 						+'<div class="login_body">'
-	// 							+'<form method="get"'
-	// 								  +'action="http://study.163.com/webDev/login.htm" target="result"'
-	// 								  +'enctype="application/x-www-form-urlencoded" name="login">'
-	// 								+'<input name="userName" type="text" placeholder="账号" required>'
-	// 								+'<input name="password" type="password" placeholder="密码" required>'
-	// 								+'<button id="login" style="display: none;"></button>'
-	// 								+'<label for="login">登录</label>'
-	// 							+'</form>'
-	// 						+'</div>'
-	// 					+'</div>';
-			
-			
-	// 		$('modal').innerHTML=temp;
-	// 		$('unlogin').addEventListener('click',function(){
-	// 			$('modal').innerHTML='';
-	// 		});
-	// 		//获取表单节点
-	// 		var loginForm=document.forms.login;
-	// 		loginForm.addEventListener('submit',function(){
-	// 			var userName=this.userName.value;
-	// 			var password=this.password.value;
-	// 			var name_pass=userName==='studyOnline'?true:false;
-	// 			var word_pass=password==='study.163.com'?true:false;
-	// 			if (name_pass&&word_pass) {
-	// 				this.userName.value=md5(userName);
-	// 				this.password.value=md5(password);
-	// 				$('modal').innerHTML='';
-	// 				setCookie('loginSuc',true,1);
-	// 				// $('focus').innerHTML=;
-	// 			}else if(!name_pass){
-	// 				clearClass(this.userName);
-	// 				addClass(this.userName,'err');
-	// 			}else if(!word_pass){
-	// 				clearClass(this.password);
-	// 				addClass(this.password,'err');
-	// 			}
-				
-	// 		});
-	// 		loginForm.userName.addEventListener('focus',function(event){
-	// 			event.preventDefault;
-	// 			this.value='';
-	// 			clearClass(this);
-	// 			addClass(this,'fc');
-	// 		});
-	// 		loginForm.userName.addEventListener('blur',function(){
-	// 			clearClass(this);
-	// 		});
-	// 		loginForm.password.addEventListener('focus',function(event){
-	// 			event.preventDefault;
-	// 			this.value='';
-	// 			clearClass(this);
-	// 			addClass(this,'fc');
-	// 		});
-	// 		loginForm.password.addEventListener('blur',function(){
-	// 			clearClass(this)
-	// 		});
-
-	// 		$('result').addEventListener('load',function(){
-	// 			var result = JSON.parse(this.contentWindow.document.body.textContent);
-	// 		});
-	// 	});
-	// };
-	
-	
-	
-
 	//-------------------------banner动画-------------------
 	var crtIndex = 0;
 	function slide(){
@@ -326,16 +239,7 @@
 	    };
 	    xhr.send(null);
 	};
-	// function _ajax(){
-	// 	var xhr = new XMLHttpRequest();
-	//     xhr.open('GET','http://study.163.com/webDev/login.htm?userName='+md5('studyOnline')+'&password='+md5('study.163.com'));
-	//     xhr.onload = function(){
-	//     	console.log(JSON.parse(xhr.responseText));
-	//     };
-	//     xhr.send(null);
-	// };
-	// _ajax();
-
+	
 	var _config={
 		url:'http://study.163.com/webDev/couresByCategory.htm',
 		pageNo:1,
